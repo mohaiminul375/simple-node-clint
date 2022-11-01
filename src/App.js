@@ -16,7 +16,7 @@ const handleSubmit=(event)=>{
   const user = {name,email};
   console.log(name,user);
   
-  fetch('http://localhost:5000/users',{
+  fetch ('http://localhost:5000/users',{
     method: 'POST',
     headers:{
       'content-type': 'application/json'
@@ -46,7 +46,7 @@ const handleSubmit=(event)=>{
     <div>
       {
         users.map(user => <p
-        key={user.id}>{user.name} {user.email}</p>)
+        key={user._id}>{user.name} {user.email}</p>)
       }
     </div>
     </div>
